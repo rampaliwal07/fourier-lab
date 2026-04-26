@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fourier Series Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="college-brand">
+                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img">
+                    <div class="college-text">
+                        <div class="main">APPLIED SCIENCES & HUMANITIES</div>
+                        <div class="sub">PCCoE</div>
+                    </div>
+                </div>
+                <div class="vlab-brand">
+                    <i class="fas fa-waveform"></i>
+                    <h1>Fourier <span>Labs</span></h1>
+                </div>
+            </div>
+            <div class="user-tag"><i class="fas fa-sliders-h"></i><span>Interactive</span></div>
+        </div>
+    </header>
+
+    <nav class="nav-wrapper">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="aim.html">Aim</a>
+            <a href="theory.html">Theory</a>
+            <a href="pretest.html">Pretest</a>
+            <a href="simulation.html" class="active">Simulation</a>
+            <a href="posttest.html">Posttest</a>
+            <a href="references.html">References</a>
+            <a href="contributors.html">Contributors</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-card">
+            <div class="page-header">
+                <h2>⚡ Fourier Series Equation Generator</h2>
+                <p>Select a waveform and half‑period L → get exact Fourier expansion (no graph)</p>
+            </div>
+            <div class="control-group">
+                <div class="input-field">
+                    <label>📌 Waveform f(x)</label>
+                    <select id="funcSelect">
+                        <option value="square">Square wave (±1)</option>
+                        <option value="sawtooth">Sawtooth (x/L)</option>
+                        <option value="triangle">Triangle wave (peak 1)</option>
+                        <option value="halfrect">Half‑rectified sine</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label>📏 Half‑period L (period = 2L)</label>
+                    <input type="number" id="Lval" value="1.0" step="0.5">
+                </div>
+                <button id="generateBtn"><i class="fas fa-calculator"></i> Generate Series</button>
+            </div>
+            <div class="result-box">
+                <div class="result-title"><i class="fas fa-chart-line"></i> Fourier Series Expansion</div>
+                <div id="fourierEquation"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Fourier series simulator – exact coefficients, first harmonics shown</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
