@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Fourier Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="college-brand">
+                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img">
+                    <div class="college-text">
+                        <div class="main">APPLIED SCIENCES & HUMANITIES</div>
+                        <div class="sub">PCCoE</div>
+                    </div>
+                </div>
+                <div class="vlab-brand">
+                    <i class="fas fa-waveform"></i>
+                    <h1>Fourier <span>Labs</span></h1>
+                </div>
+            </div>
+            <div class="user-tag"><i class="fas fa-comment-dots"></i><span>Feedback</span></div>
+        </div>
+    </header>
+
+    <nav class="nav-wrapper">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="aim.html">Aim</a>
+            <a href="theory.html">Theory</a>
+            <a href="pretest.html">Pretest</a>
+            <a href="simulation.html">Simulation</a>
+            <a href="posttest.html">Posttest</a>
+            <a href="references.html">References</a>
+            <a href="contributors.html">Contributors</a>
+            <a href="feedback.html" class="active">Feedback</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-card">
+            <div class="page-header">
+                <h2>⭐ Share Your Experience</h2>
+                <p>Help us improve this Fourier Series lab</p>
+            </div>
+            <form id="feedback-form" class="feedback-form">
+                <label>Name (optional):</label>
+                <input type="text" id="student-name" placeholder="Your name">
+                <label>Rate the lab:</label>
+                <div style="display:flex; gap:18px; margin:12px 0">
+                    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+                    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+                    <label><input type="radio" name="rating" value="1"> ⭐</label>
+                </div>
+                <label>Comments / Suggestions</label>
+                <textarea id="comments" rows="4"></textarea>
+                <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Your feedback drives innovation</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
