@@ -1,72 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Feedback - Fourier Lab</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Feedback - Fourier Series Lab</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="css/style.css"></head>
 <body>
-    <header class="glass-header">
-        <div class="container header-flex">
-            <div class="logo-area">
-                <div class="college-brand">
-                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img">
-                    <div class="college-text">
-                        <div class="main">APPLIED SCIENCES & HUMANITIES</div>
-                        <div class="sub">PCCoE</div>
-                    </div>
-                </div>
-                <div class="vlab-brand">
-                    <i class="fas fa-waveform"></i>
-                    <h1>Fourier <span>Labs</span></h1>
-                </div>
-            </div>
-            <div class="user-tag"><i class="fas fa-comment-dots"></i><span>Feedback</span></div>
-        </div>
-    </header>
-
-    <nav class="nav-wrapper">
-        <div class="container nav-links">
-            <a href="index.html">Home</a>
-            <a href="aim.html">Aim</a>
-            <a href="theory.html">Theory</a>
-            <a href="pretest.html">Pretest</a>
-            <a href="simulation.html">Simulation</a>
-            <a href="posttest.html">Posttest</a>
-            <a href="references.html">References</a>
-            <a href="contributors.html">Contributors</a>
-            <a href="feedback.html" class="active">Feedback</a>
-        </div>
-    </nav>
-
-    <main class="container">
-        <div class="main-card">
-            <div class="page-header">
-                <h2>⭐ Share Your Experience</h2>
-                <p>Help us improve this Fourier Series lab</p>
-            </div>
-            <form id="feedback-form" class="feedback-form">
-                <label>Name (optional):</label>
-                <input type="text" id="student-name" placeholder="Your name">
-                <label>Rate the lab:</label>
-                <div style="display:flex; gap:18px; margin:12px 0">
-                    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
-                    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
-                    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-                    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
-                    <label><input type="radio" name="rating" value="1"> ⭐</label>
-                </div>
-                <label>Comments / Suggestions</label>
-                <textarea id="comments" rows="4"></textarea>
-                <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
-            </form>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <p>Your feedback drives innovation</p>
-    </footer>
+    <header><div class="container header-container"><div class="logo-section"><div class="pcce-logo-container"><img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="pcce-logo-img" onerror="this.src='https://via.placeholder.com/60'"><div class="pcce-logo-text"><div class="main">APPLIED SCIENCES & HUMANITIES</div><div class="sub">PCCoE</div></div></div><div class="virtual-labs-logo"><i class="fas fa-waveform"></i><h1>Fourier <span>Labs</span></h1></div></div><div class="user-info"><i class="fas fa-user-circle"></i><span>Learner</span></div></div></header>
+    <div class="container main-content"><aside class="sidebar"><ul class="nav-menu"><li class="nav-item" data-page="index.html">Home</li><li class="nav-item" data-page="aim.html">Aim</li><li class="nav-item" data-page="theory.html">Theory</li><li class="nav-item" data-page="pretest.html">Pretest</li><li class="nav-item" data-page="simulation.html">Simulation</li><li class="nav-item" data-page="posttest.html">Posttest</li><li class="nav-item" data-page="references.html">References</li><li class="nav-item" data-page="contributors.html">Contributors</li><li class="nav-item" data-page="feedback.html">Feedback</li></ul></aside>
+    <main class="content"><div class="content-header"><h2>Feedback</h2><p>Help us improve</p></div>
+    <div class="feedback-section"><form id="feedbackForm"><label>Your Name (optional):</label><input type="text" id="studentName" style="width:100%; padding:8px; margin:8px 0;"><label>Rate the lab:</label><div><label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label> <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label> <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label> <label><input type="radio" name="rating" value="2"> ⭐⭐</label> <label><input type="radio" name="rating" value="1"> ⭐</label></div><label>Comments:</label><textarea id="comments" rows="4" style="width:100%;"></textarea><button type="submit" class="feedback-button">Submit Feedback</button></form></div>
+    </main></div>
+    <footer class="container"><p>Fourier Series Virtual Lab &copy; 2025</p></footer>
     <script src="js/main.js"></script>
 </body>
 </html>
