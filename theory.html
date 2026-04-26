@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theory - Fourier Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="college-brand">
+                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img">
+                    <div class="college-text">
+                        <div class="main">APPLIED SCIENCES & HUMANITIES</div>
+                        <div class="sub">PCCoE</div>
+                    </div>
+                </div>
+                <div class="vlab-brand">
+                    <i class="fas fa-waveform"></i>
+                    <h1>Fourier <span>Labs</span></h1>
+                </div>
+            </div>
+            <div class="user-tag"><i class="fas fa-book-open"></i><span>Theory</span></div>
+        </div>
+    </header>
+
+    <nav class="nav-wrapper">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="aim.html">Aim</a>
+            <a href="theory.html" class="active">Theory</a>
+            <a href="pretest.html">Pretest</a>
+            <a href="simulation.html">Simulation</a>
+            <a href="posttest.html">Posttest</a>
+            <a href="references.html">References</a>
+            <a href="contributors.html">Contributors</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-card">
+            <div class="page-header">
+                <h2>📖 Fourier Series Theory</h2>
+            </div>
+            <p><strong>Definition:</strong> A Fourier series represents a periodic function f(x) with period 2L as an infinite sum of sines and cosines:</p>
+            <p style="background:#f1f5f9; padding:12px; border-radius:20px; margin:16px 0;">f(x) = a₀/2 + Σ_{n=1}^{∞} [ aₙ cos(nπx/L) + bₙ sin(nπx/L) ]</p>
+            <p><strong>Coefficients:</strong><br>
+            a₀ = (1/L) ∫_{-L}^{L} f(x) dx<br>
+            aₙ = (1/L) ∫_{-L}^{L} f(x) cos(nπx/L) dx<br>
+            bₙ = (1/L) ∫_{-L}^{L} f(x) sin(nπx/L) dx</p>
+            <p><strong>Dirichlet Conditions</strong> ensure convergence. <strong>Gibbs phenomenon</strong> – ringing near jumps.</p>
+            <div style="background:#fff2e5; padding:16px; border-radius:24px; margin-top:20px;">
+                <i class="fas fa-lightbulb"></i> <strong>Examples:</strong><br>
+                - Square wave: only odd sine harmonics, bₙ = 4/(nπ)<br>
+                - Sawtooth: all sine terms, bₙ = 2(-1)^{n+1}/(nπ)<br>
+                - Triangle wave: only odd cosine terms, aₙ = 8/(n²π²)<br>
+                - Half‑rectified sine: both a₀, a₁, b₁ non‑zero.
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Fourier Series Theory</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
