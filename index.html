@@ -8,57 +8,84 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="glass-header">
-        <div class="container header-flex">
-            <div class="logo-area">
-                <div class="college-brand">
-                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img" onerror="this.src='https://via.placeholder.com/52?text=PCE'">
-                    <div class="college-text">
+    <header>
+        <div class="container header-container">
+            <div class="logo-section">
+                <div class="pcce-logo-container">
+                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" 
+                         alt="PCOE Logo" class="pcce-logo-img"
+                         onerror="this.src='https://via.placeholder.com/60?text=PCOE'">
+                    <div class="pcce-logo-text">
                         <div class="main">APPLIED SCIENCES & HUMANITIES</div>
                         <div class="sub">Pimpri Chinchwad College of Engineering</div>
                     </div>
                 </div>
-                <div class="vlab-brand">
+                <div class="virtual-labs-logo">
                     <i class="fas fa-waveform"></i>
                     <h1>Fourier <span>Labs</span></h1>
                 </div>
             </div>
-            <div class="user-tag"><i class="fas fa-user-graduate"></i> <span>Student Portal</span></div>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Welcome, Learner</span>
+            </div>
         </div>
     </header>
 
-    <nav class="nav-wrapper">
-        <div class="container nav-links">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="aim.html"><i class="fas fa-bullseye"></i> Aim</a>
-            <a href="theory.html"><i class="fas fa-book"></i> Theory</a>
-            <a href="pretest.html"><i class="fas fa-question-circle"></i> Pretest</a>
-            <a href="simulation.html"><i class="fas fa-chart-line"></i> Simulation</a>
-            <a href="posttest.html"><i class="fas fa-clipboard-list"></i> Posttest</a>
-            <a href="references.html"><i class="fas fa-book-open"></i> References</a>
-            <a href="contributors.html"><i class="fas fa-users"></i> Contributors</a>
-            <a href="feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a>
-        </div>
-    </nav>
+    <div class="container main-content">
+        <aside class="sidebar">
+            <h3>Experiments</h3>
+            <ul class="nav-menu">
+                <li class="nav-item" data-page="index.html"><i class="fas fa-home"></i> Home</li>
+                <li class="nav-item" data-page="aim.html"><i class="fas fa-bullseye"></i> Aim</li>
+                <li class="nav-item" data-page="theory.html"><i class="fas fa-book"></i> Theory</li>
+                <li class="nav-item" data-page="pretest.html"><i class="fas fa-question-circle"></i> Pretest</li>
+                <li class="nav-item" data-page="simulation.html"><i class="fas fa-desktop"></i> Simulation</li>
+                <li class="nav-item" data-page="posttest.html"><i class="fas fa-clipboard-check"></i> Posttest</li>
+                <li class="nav-item" data-page="references.html"><i class="fas fa-book-open"></i> References</li>
+                <li class="nav-item" data-page="contributors.html"><i class="fas fa-users"></i> Contributors</li>
+                <li class="nav-item" data-page="feedback.html"><i class="fas fa-comment-alt"></i> Feedback</li>
+            </ul>
+        </aside>
 
-    <main class="container">
-        <div class="main-card">
-            <div class="page-header">
-                <h2>📡 Fourier Series Virtual Lab</h2>
-                <p>Engineering Mathematics • Signal Decomposition</p>
+        <main class="content">
+            <div class="content-header">
+                <h2>Fourier Series Virtual Lab</h2>
+                <p>Engineering Mathematics Experiment</p>
             </div>
-            <p style="font-size:1.1rem; margin-bottom:32px;">Explore how any periodic signal can be broken into sines and cosines. Generate Fourier series equations for common waveforms, test your knowledge, and learn the theory.</p>
-            <div class="grid-cards">
-                <div class="feature-card" onclick="location.href='simulation.html'"><i class="fas fa-calculator"></i><h3>Live Simulation</h3><p>Choose function & L → get Fourier series</p></div>
-                <div class="feature-card" onclick="location.href='pretest.html'"><i class="fas fa-brain"></i><h3>Pretest</h3><p>Check your basics</p></div>
-                <div class="feature-card" onclick="location.href='theory.html'"><i class="fas fa-microscope"></i><h3>Learn Theory</h3><p>Dirichlet conditions, formulas</p></div>
-                <div class="feature-card" onclick="location.href='posttest.html'"><i class="fas fa-trophy"></i><h3>Posttest</h3><p>Validate your understanding</p></div>
+            <div class="aim-sections">
+                <div class="section-card" onclick="location.href='aim.html'">
+                    <i class="fas fa-bullseye"></i><h3>Aim</h3><p>Objective of the experiment</p>
+                </div>
+                <div class="section-card" onclick="location.href='theory.html'">
+                    <i class="fas fa-book"></i><h3>Theory</h3><p>Background concepts</p>
+                </div>
+                <div class="section-card" onclick="location.href='pretest.html'">
+                    <i class="fas fa-question-circle"></i><h3>Pretest</h3><p>Pre-experiment assessment</p>
+                </div>
+                <div class="section-card" onclick="location.href='simulation.html'">
+                    <i class="fas fa-desktop"></i><h3>Simulation</h3><p>Step‑by‑step equation solver</p>
+                </div>
+                <div class="section-card" onclick="location.href='posttest.html'">
+                    <i class="fas fa-clipboard-check"></i><h3>Posttest</h3><p>Post-experiment assessment</p>
+                </div>
+                <div class="section-card" onclick="location.href='references.html'">
+                    <i class="fas fa-book-open"></i><h3>References</h3><p>Further reading materials</p>
+                </div>
+                <div class="section-card" onclick="location.href='contributors.html'">
+                    <i class="fas fa-users"></i><h3>Contributors</h3><p>People involved</p>
+                </div>
+                <div class="section-card" onclick="location.href='feedback.html'">
+                    <i class="fas fa-comment-alt"></i><h3>Feedback</h3><p>Share your experience</p>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
-    <footer class="footer">
-        <p>© 2025 Fourier Virtual Lab | Applied Sciences & Humanities | PCCoE</p>
+    <footer class="container">
+        <p>Fourier Series Virtual Lab &copy; 2025 | Applied Sciences & Humanities Department | 
+           <span class="footer-logo">Pimpri Chinchwad College of Engineering</span>
+        </p>
     </footer>
     <script src="js/main.js"></script>
 </body>
