@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourier Series Virtual Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <div class="college-brand">
+                    <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png" class="logo-img" onerror="this.src='https://via.placeholder.com/52?text=PCE'">
+                    <div class="college-text">
+                        <div class="main">APPLIED SCIENCES & HUMANITIES</div>
+                        <div class="sub">Pimpri Chinchwad College of Engineering</div>
+                    </div>
+                </div>
+                <div class="vlab-brand">
+                    <i class="fas fa-waveform"></i>
+                    <h1>Fourier <span>Labs</span></h1>
+                </div>
+            </div>
+            <div class="user-tag"><i class="fas fa-user-graduate"></i> <span>Student Portal</span></div>
+        </div>
+    </header>
+
+    <nav class="nav-wrapper">
+        <div class="container nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="aim.html"><i class="fas fa-bullseye"></i> Aim</a>
+            <a href="theory.html"><i class="fas fa-book"></i> Theory</a>
+            <a href="pretest.html"><i class="fas fa-question-circle"></i> Pretest</a>
+            <a href="simulation.html"><i class="fas fa-chart-line"></i> Simulation</a>
+            <a href="posttest.html"><i class="fas fa-clipboard-list"></i> Posttest</a>
+            <a href="references.html"><i class="fas fa-book-open"></i> References</a>
+            <a href="contributors.html"><i class="fas fa-users"></i> Contributors</a>
+            <a href="feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-card">
+            <div class="page-header">
+                <h2>📡 Fourier Series Virtual Lab</h2>
+                <p>Engineering Mathematics • Signal Decomposition</p>
+            </div>
+            <p style="font-size:1.1rem; margin-bottom:32px;">Explore how any periodic signal can be broken into sines and cosines. Generate Fourier series equations for common waveforms, test your knowledge, and learn the theory.</p>
+            <div class="grid-cards">
+                <div class="feature-card" onclick="location.href='simulation.html'"><i class="fas fa-calculator"></i><h3>Live Simulation</h3><p>Choose function & L → get Fourier series</p></div>
+                <div class="feature-card" onclick="location.href='pretest.html'"><i class="fas fa-brain"></i><h3>Pretest</h3><p>Check your basics</p></div>
+                <div class="feature-card" onclick="location.href='theory.html'"><i class="fas fa-microscope"></i><h3>Learn Theory</h3><p>Dirichlet conditions, formulas</p></div>
+                <div class="feature-card" onclick="location.href='posttest.html'"><i class="fas fa-trophy"></i><h3>Posttest</h3><p>Validate your understanding</p></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Fourier Virtual Lab | Applied Sciences & Humanities | PCCoE</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
